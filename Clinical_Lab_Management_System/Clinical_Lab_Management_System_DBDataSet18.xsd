@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Clinical_Lab_Management_System_DBDataSet18" targetNamespace="http://tempuri.org/Clinical_Lab_Management_System_DBDataSet18.xsd" xmlns:mstns="http://tempuri.org/Clinical_Lab_Management_System_DBDataSet18.xsd" xmlns="http://tempuri.org/Clinical_Lab_Management_System_DBDataSet18.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Clinical_Lab_Management_System_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Clinical_Lab_Management_System_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Clinical_Lab_Management_System.Properties.Settings.GlobalReference.Default.Clinical_Lab_Management_System_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Staff_DetailTableAdapter" GeneratorDataComponentClassName="Staff_DetailTableAdapter" Name="Staff_Detail" UserDataComponentName="Staff_DetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Clinical_Lab_Management_System_DBConnectionString (Settings)" DbObjectName="Clinical_Lab_Management_System_DB.dbo.Staff_Detail" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT S_ID, S_FName, S_Surname, S_DOB, S_Gender, S_Education, S_Post, S_AadhaarNo, S_Address, S_MobNo1, S_Email, S_ShiftTime, S_Image, S_Age FROM dbo.Staff_Detail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="S_ID" DataSetColumn="S_ID" />
+              <Mapping SourceColumn="S_FName" DataSetColumn="S_FName" />
+              <Mapping SourceColumn="S_Surname" DataSetColumn="S_Surname" />
+              <Mapping SourceColumn="S_DOB" DataSetColumn="S_DOB" />
+              <Mapping SourceColumn="S_Gender" DataSetColumn="S_Gender" />
+              <Mapping SourceColumn="S_Education" DataSetColumn="S_Education" />
+              <Mapping SourceColumn="S_Post" DataSetColumn="S_Post" />
+              <Mapping SourceColumn="S_AadhaarNo" DataSetColumn="S_AadhaarNo" />
+              <Mapping SourceColumn="S_Address" DataSetColumn="S_Address" />
+              <Mapping SourceColumn="S_MobNo1" DataSetColumn="S_MobNo1" />
+              <Mapping SourceColumn="S_Email" DataSetColumn="S_Email" />
+              <Mapping SourceColumn="S_ShiftTime" DataSetColumn="S_ShiftTime" />
+              <Mapping SourceColumn="S_Image" DataSetColumn="S_Image" />
+              <Mapping SourceColumn="S_Age" DataSetColumn="S_Age" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Clinical_Lab_Management_System_DBDataSet18" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Clinical_Lab_Management_System_DBDataSet18" msprop:Generator_UserDSName="Clinical_Lab_Management_System_DBDataSet18">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Staff_Detail" msprop:Generator_TableClassName="Staff_DetailDataTable" msprop:Generator_TableVarName="tableStaff_Detail" msprop:Generator_TablePropName="Staff_Detail" msprop:Generator_RowDeletingName="Staff_DetailRowDeleting" msprop:Generator_RowChangingName="Staff_DetailRowChanging" msprop:Generator_RowEvHandlerName="Staff_DetailRowChangeEventHandler" msprop:Generator_RowDeletedName="Staff_DetailRowDeleted" msprop:Generator_UserTableName="Staff_Detail" msprop:Generator_RowChangedName="Staff_DetailRowChanged" msprop:Generator_RowEvArgName="Staff_DetailRowChangeEvent" msprop:Generator_RowClassName="Staff_DetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="S_ID" msprop:Generator_ColumnVarNameInTable="columnS_ID" msprop:Generator_ColumnPropNameInRow="S_ID" msprop:Generator_ColumnPropNameInTable="S_IDColumn" msprop:Generator_UserColumnName="S_ID" type="xs:int" />
+              <xs:element name="S_FName" msprop:Generator_ColumnVarNameInTable="columnS_FName" msprop:Generator_ColumnPropNameInRow="S_FName" msprop:Generator_ColumnPropNameInTable="S_FNameColumn" msprop:Generator_UserColumnName="S_FName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_Surname" msprop:Generator_ColumnVarNameInTable="columnS_Surname" msprop:Generator_ColumnPropNameInRow="S_Surname" msprop:Generator_ColumnPropNameInTable="S_SurnameColumn" msprop:Generator_UserColumnName="S_Surname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_DOB" msprop:Generator_ColumnVarNameInTable="columnS_DOB" msprop:Generator_ColumnPropNameInRow="S_DOB" msprop:Generator_ColumnPropNameInTable="S_DOBColumn" msprop:Generator_UserColumnName="S_DOB" type="xs:dateTime" />
+              <xs:element name="S_Gender" msprop:Generator_ColumnVarNameInTable="columnS_Gender" msprop:Generator_ColumnPropNameInRow="S_Gender" msprop:Generator_ColumnPropNameInTable="S_GenderColumn" msprop:Generator_UserColumnName="S_Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_Education" msprop:Generator_ColumnVarNameInTable="columnS_Education" msprop:Generator_ColumnPropNameInRow="S_Education" msprop:Generator_ColumnPropNameInTable="S_EducationColumn" msprop:Generator_UserColumnName="S_Education">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_Post" msprop:Generator_ColumnVarNameInTable="columnS_Post" msprop:Generator_ColumnPropNameInRow="S_Post" msprop:Generator_ColumnPropNameInTable="S_PostColumn" msprop:Generator_UserColumnName="S_Post">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_AadhaarNo" msprop:Generator_ColumnVarNameInTable="columnS_AadhaarNo" msprop:Generator_ColumnPropNameInRow="S_AadhaarNo" msprop:Generator_ColumnPropNameInTable="S_AadhaarNoColumn" msprop:Generator_UserColumnName="S_AadhaarNo" type="xs:decimal" />
+              <xs:element name="S_Address" msprop:Generator_ColumnVarNameInTable="columnS_Address" msprop:Generator_ColumnPropNameInRow="S_Address" msprop:Generator_ColumnPropNameInTable="S_AddressColumn" msprop:Generator_UserColumnName="S_Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_MobNo1" msprop:Generator_ColumnVarNameInTable="columnS_MobNo1" msprop:Generator_ColumnPropNameInRow="S_MobNo1" msprop:Generator_ColumnPropNameInTable="S_MobNo1Column" msprop:Generator_UserColumnName="S_MobNo1" type="xs:decimal" />
+              <xs:element name="S_Email" msprop:Generator_ColumnVarNameInTable="columnS_Email" msprop:Generator_ColumnPropNameInRow="S_Email" msprop:Generator_ColumnPropNameInTable="S_EmailColumn" msprop:Generator_UserColumnName="S_Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_ShiftTime" msprop:Generator_ColumnVarNameInTable="columnS_ShiftTime" msprop:Generator_ColumnPropNameInRow="S_ShiftTime" msprop:Generator_ColumnPropNameInTable="S_ShiftTimeColumn" msprop:Generator_UserColumnName="S_ShiftTime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="S_Image" msprop:Generator_ColumnVarNameInTable="columnS_Image" msprop:Generator_ColumnPropNameInRow="S_Image" msprop:Generator_ColumnPropNameInTable="S_ImageColumn" msprop:Generator_UserColumnName="S_Image" type="xs:base64Binary" />
+              <xs:element name="S_Age" msprop:Generator_ColumnVarNameInTable="columnS_Age" msprop:Generator_ColumnPropNameInRow="S_Age" msprop:Generator_ColumnPropNameInTable="S_AgeColumn" msprop:Generator_UserColumnName="S_Age" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
